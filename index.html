@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pecunia One - A Revolução da Sua Vida Financeira</title>
-    <meta name="description" content="O primeiro app que calcula sua inflação real e automatiza suas finanças via QR Code. Pare de digitar e comece a lucrar.">
     
+    <title>Pecunia One | Controle Financeiro Pessoal via Leitura de QR Code e IA</title>
+    <meta name="description" content="Automatize suas finanças com o Pecunia One. O único app que lê notas fiscais (NFC-e), categoriza gastos e calcula sua inflação pessoal real usando Inteligência Artificial.">
+    <meta name="keywords" content="Pecunia One, controle financeiro, inflação pessoal, leitor qr code nota fiscal, gerenciador de gastos, finanças pessoais IA, Nogueira SDS">
+    <meta name="author" content="Nogueira Software & Data Solutions">
+    <link rel="canonical" href="https://web.pecunia.one/">
+
     <link rel="icon" type="image/svg+xml" href="./logo.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://web.pecunia.one/">
+    <meta property="og:title" content="Pecunia One - Sua Inflação Real, Calculada por IA">
+    <meta property="og:description" content="Pare de digitar gastos. Escaneie o QR Code da nota e deixe o Gemini organizar sua vida financeira.">
+    <meta property="og:image" content="https://web.pecunia.one/og-image.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://web.pecunia.one/">
+    <meta property="twitter:title" content="Pecunia One - Controle Financeiro Automático">
+    <meta property="twitter:description" content="Descubra sua inflação pessoal real. Escaneie notas fiscais e obtenha insights financeiros.">
+    <meta property="twitter:image" content="https://web.pecunia.one/og-image.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-	 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0353924964599765"
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0353924964599765"
      crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -24,10 +38,10 @@
                     },
                     colors: {
                         brand: {
-                            dark: '#0D1B3E', // Azul Petróleo Metálico
-                            gold: '#F9A825', // Dourado Metálico
+                            dark: '#0D1B3E',
+                            gold: '#F9A825',
                             goldlight: '#FFD54F',
-                            accent: '#2E7D32' // Detalhes em Verde
+                            accent: '#2E7D32'
                         }
                     }
                 }
@@ -37,32 +51,42 @@
 
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Pecunia One",
+      "operatingSystem": "Android, iOS, Web",
+      "applicationCategory": "FinanceApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "description": "Aplicativo de controle financeiro que utiliza IA para ler QR Codes de notas fiscais e calcular a inflação pessoal.",
+      "author": {
+        "@type": "Organization",
+        "name": "Nogueira Software & Data Solutions",
+        "url": "https://nogueirasds.com"
+      }
+    }
+    </script>
+
     <style>
-        @keyframes fade-in-up {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes zoom-in {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        @keyframes pulse-slow {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        
+        /* ... Seus estilos de animação permanecem iguais ... */
+        @keyframes fade-in-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes zoom-in { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        @keyframes pulse-slow { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
         .animate-fade-up { animation: fade-in-up 0.8s ease-out forwards; opacity: 0; }
         .animate-zoom { animation: zoom-in 0.8s ease-out forwards; opacity: 0; }
         .animate-pulse-slow { animation: pulse-slow 4s infinite; }
-        
         .delay-100 { animation-delay: 100ms; }
         .delay-200 { animation-delay: 200ms; }
         .delay-300 { animation-delay: 300ms; }
         .delay-500 { animation-delay: 500ms; }
-
-        /* Smooth Scroll */
         html { scroll-behavior: smooth; }
     </style>
+</head>
 </head>
 <body class="bg-brand-dark font-sans text-white overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark">
 
